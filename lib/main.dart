@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_project/core/extensions/router.dart';
 
 void main() {
   runApp(const ChebTracker());
@@ -11,7 +12,7 @@ class ChebTracker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routeInformationProvider: _router,
+      routerConfig: router,
     );
   }
 }
